@@ -1,4 +1,3 @@
-//var username = "velvetPhos";
 /*
 var tagList = ["Amnesia"
       ,"Anti-Hero"
