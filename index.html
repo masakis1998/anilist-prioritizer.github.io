@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <title>AL Prediction</title>
+	<link rel="shortcut icon" type="image/png" href=""/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="request.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="menu">
+		<div class="menuwrap">
+			<button type="button" class="datafetch">Fetch AL Data</button>
+			<div class="separation"></div>
+			<button type="button" class="prediction">Predict PTW</button>
+			<div class="numbers">
+				<div class="numberwrap">
+					<div class="valtext">Order:</div>
+					<input type="number" class="order" value="3" max="20" min="1">
+				</div>
+				<div class="numberwrap">
+					<div class="valtext">Step:</div>
+					<input type="number" class="step" value="1" max="10" min="1">
+				</div>
+
+			</div>
+			<div class="separation"></div>
+			<button type="button" class="onetitle">Predict a Title</button>
+			<input type="text" class="ALid" placeholder="Anilist ID">
+			<div class="separation"></div>
+			<button type="button" class="help">Help</button>
+		</div>
+
+
+
+		<div class="userwrap">
+			<div class="avatar"></div>
+			<div class="dropdown">
+				<button type="button" class="clear">Clear Data</button>
+				<button type="button" class="changeuser">Change User</button>
+				<a href="https://anilist.co/user/velvetPhos/" target="_blank"><button type="button" class="source">Source Code</button></a>
+		  </div>
+		</div>
+
+	</div>
+
+	<div class="input"></div>
+	<div class="loading"></div>
+	<div class="result"></div>
+</body>
+</html>
